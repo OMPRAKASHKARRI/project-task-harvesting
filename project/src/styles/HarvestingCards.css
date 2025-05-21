@@ -1,0 +1,156 @@
+.harvesting-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.harvesting-card {
+  flex: 1;
+  min-width: 300px;
+  border-radius: 16px;
+  padding: 24px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.pre-harvesting-card {
+  background-color: #1E293B;
+}
+
+.after-harvesting-card {
+  background-color: #1E40AF;
+  position: relative;
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.capital-gains-section {
+  margin-bottom: 24px;
+}
+
+.gains-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.gains-type {
+  flex: 1;
+  min-width: 180px;
+}
+
+.gains-type h3 {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 16px;
+  color: #94A3B8;
+}
+
+.gains-details {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.gains-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gains-item.total {
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  font-weight: 500;
+}
+
+.label {
+  color: #CBD5E1;
+  font-size: 14px;
+}
+
+.total .label {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.value {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.value.positive {
+  color: #22C55E;
+}
+
+.value.negative {
+  color: #EF4444;
+}
+
+.realized-gains {
+  margin-top: auto;
+  padding-top: 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.realized-gains-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.realized-label {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.realized-value {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.realized-value.positive {
+  color: #22C55E;
+}
+
+.realized-value.negative {
+  color: #EF4444;
+}
+
+.savings-message {
+  margin-top: 16px;
+  padding: 8px 16px;
+  background-color: rgba(34, 197, 94, 0.2);
+  border-radius: 8px;
+  color: #22C55E;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .harvesting-cards-container {
+    flex-direction: column;
+  }
+  
+  .harvesting-card {
+    width: 100%;
+  }
+  
+  .gains-row {
+    flex-direction: column;
+    gap: 24px;
+  }
+  
+  .gains-type {
+    width: 100%;
+  }
+}

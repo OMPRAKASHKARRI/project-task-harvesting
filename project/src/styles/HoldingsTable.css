@@ -1,0 +1,191 @@
+.holdings-table-container {
+  background-color: white;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  margin-bottom: 32px;
+}
+
+.table-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #0F172A;
+  margin-bottom: 24px;
+}
+
+.table-responsive {
+  overflow-x: auto;
+  width: 100%;
+}
+
+.holdings-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.holdings-table th {
+  background-color: #F8FAFC;
+  color: #64748B;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: left;
+  padding: 12px 16px;
+  border-bottom: 1px solid #E2E8F0;
+}
+
+.holdings-table td {
+  padding: 16px;
+  color: #0F172A;
+  border-bottom: 1px solid #E2E8F0;
+  font-size: 14px;
+}
+
+.checkbox-col {
+  width: 40px;
+  text-align: center;
+}
+
+.checkbox-col input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.asset-col {
+  min-width: 160px;
+}
+
+.asset-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.asset-logo {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.asset-name {
+  display: flex;
+  flex-direction: column;
+}
+
+.asset-symbol {
+  font-weight: 600;
+  color: #0F172A;
+  margin-bottom: 4px;
+}
+
+.asset-fullname {
+  font-size: 12px;
+  color: #64748B;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px;
+}
+
+.holdings-col {
+  min-width: 120px;
+}
+
+.holdings-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.holdings-amount {
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.buy-price {
+  font-size: 12px;
+  color: #64748B;
+}
+
+.price-col {
+  min-width: 120px;
+  font-weight: 500;
+}
+
+.gain-col {
+  min-width: 140px;
+}
+
+.gain-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.gain-amount {
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.gain-amount.positive {
+  color: #22C55E;
+}
+
+.gain-amount.negative {
+  color: #EF4444;
+}
+
+.gain-balance {
+  font-size: 12px;
+  color: #64748B;
+}
+
+.sell-amount-col {
+  min-width: 120px;
+  font-weight: 500;
+}
+
+.selected-row {
+  background-color: rgba(59, 130, 246, 0.05);
+}
+
+.view-all-button {
+  display: block;
+  margin: 24px auto 0;
+  padding: 10px 24px;
+  background-color: #F1F5F9;
+  color: #1E40AF;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.view-all-button:hover {
+  background-color: #E2E8F0;
+}
+
+.loading {
+  text-align: center;
+  padding: 40px;
+  color: #64748B;
+  font-size: 16px;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .holdings-table th,
+  .holdings-table td {
+    padding: 12px 10px;
+  }
+  
+  .asset-name {
+    max-width: 120px;
+  }
+}
+
+@media (max-width: 768px) {
+  .holdings-table {
+    min-width: 700px;
+  }
+}
